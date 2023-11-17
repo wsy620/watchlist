@@ -48,7 +48,7 @@ def forge():
     """Generate fake data."""
     db.create_all()
 # 全局的两个变量移动到这个函数内
-    name = 'Wu Siying'
+    name = 'WSY'
     movies = [
         {'title': 'My Neighbor Totoro', 'year': '1988'},
         {'title': 'Dead Poets Society', 'year': '1989'},
@@ -69,5 +69,3 @@ def forge():
 
     db.session.commit()
     click.echo('Done.')
-
-
